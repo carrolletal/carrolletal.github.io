@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .projects a {
+            display: block;
+            margin: 10px 0;
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Briana Carroll</h1>
+    <nav>
+        <a href="#overview">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>Inhibitory mechanisms in thalamus</h2>
+    <p>Inhibition in thalamocortical circuits plays a critical role in cognition and behavior and is implicated in 
+        pathologies including epileptic seizures [1]. To better understand inhibitory function, we study diversity 
+        in the thalamic reticular nucleus (TRN), the major source of inhibition to mouse thalamus.  
+        In two projects, we study diversity within TRN-- among its functional and modal subdivisions, and between species. </p>
+    <p>
+    <em>Subnetwork connectivity in TRN</em><br>
+            <p>  </p>
+    Thalamic reticular nucleus has core and edge subdivisions involved in 
+        primary sensation versus more derived forebrain computations, and these are differently 
+        targeted by different inputs [2-3]. In ongoing experiments, we extend this to a brain-wide analysis of inputs, 
+        leveraging the Allen Brain Institute’s mouse connectivity datasets.  We compare inputs to the core and edge, 
+        and examine how these vary between different modalities like vision versus somatosensation. 
+        This work aims to determine what aspects of TRN connectivity are 
+        general versus specialized to a particular subdivision of sense.
+  </p>
+    <p>
+    <em>Comparative neuroanatomy</em><br>
+                    <p>  </p>
+    While inhibitory cell bodies are largely restricted to TRN in lab mice [4], 
+        this is at odds with observations in other rodent species, and potentially a 
+        result of inbreeding in lab mouse strains.  We test this by trapping wild mice oncampus, sectioning their brains, 
+        labelling sections for markers of inhibition including the neurotransmitter GABA, which we visualize using light microscopy. 
+  </p>
+      <p>
+    <em>Citations</em><br></p>
+      <p>
+    1. Huguenard JR, McCormick DA. Thalamic synchrony and dynamic regulation of global forebrain oscillations. 
+          Trends Neurosci. 2007 Jul;30(7):350-6. doi: 10.1016/j.tins.2007.05.007. Epub 2007 Jun 4. PMID: 17544519.
+  </p>
+     <p>
+         2. Carroll BJ, Sampathkumar V, Kasthuri N, Sherman SM. Layer 5 of cortex innervates the thalamic reticular nucleus in mice. Proc Natl Acad Sci U S A. 2022 Sep 20;119(38):e2205209119. doi: 10.1073/pnas.2205209119. Epub 2022 Sep 12. PMID: 36095204; PMCID: PMC9499584.
+           </p>
+     <p>
+        3. Clemente-Perez A, Makinson SR, Higashikubo B, Brovarney S, Cho FS, Urry A, Holden SS, Wimer M, Dávid C, Fenno LE, Acsády L, Deisseroth K, Paz JT. Distinct Thalamic Reticular Cell Types Differentially Modulate Normal and Pathological Cortical Rhythms. Cell Rep. 2017 Jun 6;19(10):2130-2142. doi: 10.1016/j.celrep.2017.05.044. PMID: 28591583; PMCID: PMC5557038.
+              </p>
+    <p>
+4. Arcelli P, Frassoni C, Regondi MC, De Biasi S, Spreafico R. GABAergic neurons in mammalian thalamus: a marker of thalamic complexity? Brain Res Bull. 1997;42(1):27-37. doi: 10.1016/s0361-9230(96)00107-4. PMID: 8978932.
+     </p>
+    <!-- <ul>
+        <li>Neuroscience research and experimentation</li>
+        <li>Data analysis and visualization</li>
+        <li>Python programming and computational modeling</li>
+        <li>Interactive notebooks and reproducible workflows</li>
+    </ul>-->
+</section>
+
+
+
+<footer>
+    &copy; 2025 Carroll. All rights reserved.
+</footer>
+
+</body>
+</html>
