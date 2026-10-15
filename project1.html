@@ -56,6 +56,28 @@
             color: #555;
             line-height: 1.4;
         }
+        .zoomable img {
+            cursor: zoom-in;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            cursor: zoom-out;
+        }
+        .lightbox.open {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 6px;
+        }
         .projects a {
             display: block;
             margin: 10px 0;
@@ -91,8 +113,10 @@
         This work aims to determine what aspects of TRN connectivity are 
         general versus specialized to a particular subdivision of sense.
   </p>
-    <figure class="poster">
-        <img src="images/trn-poster-2026.jpg" alt="T.L. Dunbar and B.J. Carroll standing beside their research poster on connectivity-defined subdivisions of the thalamic reticular nucleus">
+    <figure class="poster" id="dunbar-carroll-2026">
+        <a href="images/trn-poster-2026-full.jpg" class="zoomable" title="Click to enlarge">
+            <img src="images/trn-poster-2026.jpg" alt="T.L. Dunbar and B.J. Carroll standing beside their research poster on connectivity-defined subdivisions of the thalamic reticular nucleus">
+        </a>
         <figcaption>T.L. Dunbar and B.J. Carroll. 2026. <em>Connectivity-Defined Subdivisions of the Thalamic Reticular Nucleus.</em> Chicago State University Undergraduate Research Day.</figcaption>
     </figure>
     <p>
@@ -131,6 +155,28 @@
 <footer>
     &copy; 2025 Carroll. All rights reserved.
 </footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Enlarged image">
+    <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+    (function () {
+        var box = document.getElementById('lightbox');
+        var big = document.getElementById('lightbox-img');
+        document.querySelectorAll('a.zoomable').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                var img = link.querySelector('img');
+                big.src = link.href;
+                big.alt = img ? img.alt : '';
+                box.classList.add('open');
+            });
+        });
+        function close() { box.classList.remove('open'); }
+        box.addEventListener('click', close);
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+    })();
+</script>
 
 </body>
 </html>
